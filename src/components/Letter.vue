@@ -36,12 +36,10 @@ positioniert ist. final_adjusted_code = """
         class="w-[400px] cursor-auto h-[500px] bg-[#F9A8D4] rounded-lg shadow-lg flex flex-col items-center justify-center text-center p-0"
       >
         <div class="mb-6">
-        gifimage.innerHTML=
-    `<img src='https://c.tenor.com/pFn8y5a7HXEAAAAC/tenor.gif'>`;
-          <!--<img
+          <img
             src="../assets/kiss.gif"
             alt="Bears"
-            class="w-[200px] h-auto mx-auto rounded-md shadow-md"-->
+            class="w-[200px] h-auto mx-auto rounded-md shadow-md"
           />
         </div>
         <h1 class="text-4xl font-bold text-[#E74C3C] mb-4">Yay!</h1>
