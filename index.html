@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Valentines Card</title>
+</head>
+<body>
+    <nav class="nav askout-nav px-500">
+        <div class="container">
+
+            <div class="col-12 p-2 text-center md:size-24 size-16"><img src="assets/stamp1.png" alt="Decorative stamp" class="w-full h-full object-contain"/></div>
+            
+                <div class="col-12 p-2 text-center"></div>
+                <h1 class="text-center" style="color: #f5f5dc;">Valentines Invite</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="parent-container">
+        <div class="centered-div" id="gifimage">
+            <img src="https://c.tenor.com/-xznQdG6xFsAAAAC/tenor.gif" width="370" height="230">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="successChange">
+            
+            <h2 class="text-center">Hey Kavita</h2>
+            <h2 class="text-center font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 4.5rem;
+            font-weight: 700;text-align: center;max-width: 80%;line-height: 1.2;text-transform: none">Will you be my valentine?</h2>
+            
+                <div class="col-12 p-2 text-center">
+                    <button class="btn btn-success btn-lg" onclick="success()" id="yesbtn" >Yes</button>
+                    <button class="btn btn-danger btn-lg" onclick="failPile()" id="no-btn" onmouseover="hideNoButton()" onmouseout="showNoButton()">No</button>
+                </div>
+        </div>
+    </div>
+    <script>
+        function yesClicked() {
+            window.location.href = "yes_page.html"; // Redirect to the "yes_page.html"
+        }
+
+        function hideNoButton() {
+            var noButton = document.getElementById("no-btn");
+            noButton.style.opacity = "0"; // Make the No button transparent
+            var yesButton = document.getElementById("yes-btn");
+            yesButton.style.fontSize = "40px"; // Increase font size of the Yes button
+            yesButton.style.padding = "30px 60px"; // Increase padding of the Yes button
+        }
+
+        function showNoButton() {
+            var noButton = document.getElementById("no-btn");
+            noButton.style.opacity = "1"; // Make the No button visible again
+            var yesButton = document.getElementById("yes-btn");
+            yesButton.style.fontSize = "24px"; // Reset font size of the Yes button
+            yesButton.style.padding = "20px 40px"; // Reset padding of the Yes button
+        }
+    </script>
+    <script src="test.js"></script>
+</body>
+</html>
+
